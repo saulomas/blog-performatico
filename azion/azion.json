@@ -1,0 +1,58 @@
+{
+  "name": "blog-performatico",
+  "bucket": "blog-performatico-20250126223505",
+  "preset": "angular",
+  "env": "production",
+  "prefix": "20250126223443",
+  "not-first-run": true,
+  "function": {
+    "id": 37147,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 35790,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1737933595,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1737935373,
+    "name": "blog-performatico",
+    "domain_name": "sxp9zlyi0a.map.azionedge.net",
+    "url": "https://sxp9zlyi0a.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 185531,
+      "origin-key": "f5c71147-2c7a-4023-955e-24bc71db0953",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 355796,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 355797,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 355798,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
